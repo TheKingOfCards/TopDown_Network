@@ -56,15 +56,8 @@ public class SCR_PlayerHealth : NetworkBehaviour
     }
 
 
-    private void Update()
-    {
-        if (!IsOwner) return;
-    }
-
-
     public void TakeDamage(int someDamage)
     {
-        if(!IsOwner) return;
         _health.Value -= someDamage;
     }
 
