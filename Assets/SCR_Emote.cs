@@ -24,8 +24,6 @@ public class SCR_Emote : NetworkBehaviour
     {
         if(!IsOwner) return;
 
-        Debug.Log(OwnerClientId);
-
         transform.SetPositionAndRotation(new(_followTransform.position.x, _followTransform.position.y + _yOffset, _followTransform.position.z), new(0, 0, 0, 0));
 
         _timer -= Time.deltaTime;
